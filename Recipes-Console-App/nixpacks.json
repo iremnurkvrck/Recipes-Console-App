@@ -5,11 +5,11 @@
     },
     "build": {
       "cmds": [
-        "javac -d out src/com/recipes/menu/*.java src/com/recipes/*.java src/com/recipes/model/*.java src/com/recipes/service/*.java src/com/recipes/repository/*.java  src/com/recipes/database/*.java"
+        "javac -d out src/com/recipes/menu/*.java src/com/recipes/*.java src/com/recipes/model/*.java src/com/recipes/service/*.java src/com/recipes/repository/*.java src/com/recipes/database/*.java"
       ]
     },
     "start": {
-      "cmd": "java -cp out com.recipes.RecipesApp"
+      "cmd": "java -cp out:libs/postgresql-42.7.5.jar com.recipes.RecipesApp"
     }
   }
 }
