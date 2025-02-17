@@ -4,7 +4,9 @@
       "nixPkgs": ["openjdk"]
     },
     "build": {
-      "cmds": ["javac -d out src/com/recipes/*.java"]
+      "cmds": [
+        "javac -d out src/com/recipes/menu/*.java src/com/recipes/*.java src/com/recipes/model/*.java src/com/recipes/service/*.java src/com/recipes/repository/*.java  src/com/recipes/database/*.java"
+      ]
     },
     "start": {
       "cmd": "java -cp out com.recipes.RecipesApp"
