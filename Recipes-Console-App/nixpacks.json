@@ -1,0 +1,13 @@
+{
+  "phases": {
+    "setup": {
+      "nixPkgs": ["openjdk"]
+    },
+    "build": {
+      "cmds": ["javac -d out src/com/recipes/*.java"]
+    },
+    "start": {
+      "cmd": "java -cp out com.recipes.RecipesApp"
+    }
+  }
+}
