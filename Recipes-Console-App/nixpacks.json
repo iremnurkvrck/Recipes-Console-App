@@ -9,7 +9,7 @@
       ]
     },
     "start": {
-      "cmd": "java -cp out:libs/postgresql-42.7.5.jar com.recipes.RecipesApp"
+      "cmd": "java -cp out;libs/postgresql-42.7.5.jar com.recipes.RecipesApp"
     }
   }
 }
