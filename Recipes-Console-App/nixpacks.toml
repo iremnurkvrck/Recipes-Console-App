@@ -1,8 +1,8 @@
 [phases.setup]
-nixpkgs = ["openjdk"]  # OpenJDK kullanarak Java ortamı sağlar
+nixpkgs = ["openjdk"]
 
 [phases.build]
-cmds = ["javac -d out src/com/recipes/*.java"]  # Java dosyalarını derler
+cmds = ["javac -d out src/com/recipes/*.java"]
 
 [phases.start]
-cmd = "java -cp out com.recipes.TariflerUygulaması"  # Ana sınıfı başlatır
+cmd = "java -cp out com.recipes.RecipesApp"
